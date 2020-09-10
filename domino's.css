@@ -1,0 +1,498 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* header */
+
+.header {
+  background-color: #000;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.header a{
+  color:#fff;
+  font-size:20px;
+  font-family:arial;
+}
+.header a:hover{
+  color:red
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #000;
+  margin-right: 50px;
+}
+.header img{
+  width:80px;
+  height:60px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.header li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 31px 20px;
+  position: relative;  
+}
+
+.header .menu-icon .nav-icon {
+  background: #fff;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 50px;
+  
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 12px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -11px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+.titre-1{
+  text-align: center;
+  font-size:23px;
+  font-family:arial;
+  color:#000;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  padding:80px;
+  text-align: center;
+}
+.commandez{
+  display:flex;
+  text-align: center;
+  justify-content:center;
+  margin-top: -34px;
+}
+.livraison{
+  background:#495CFF;
+  width:250px;
+  height:330px;
+  margin:35px;
+  border-radius:15px;
+  margin-top: 80px;
+}
+.livraison img{
+  width:100px;
+  margin-top: 10px;
+  opacity: 90%;
+}
+.livraison p,.emporter p{
+  margin-top: 70px;
+  font-size:33px;
+  color:#fff;
+  font-family:arial;
+  font-weight: bold;
+}
+.emporter{
+  background:#DB2218;
+  width:250px;
+  height:330px;
+  margin:35px;
+  border-radius:15px;
+  margin-top: 80px;
+}
+.emporter img{
+  width:100px;
+  margin-top: 10px;
+  opacity:90%;
+}
+.color-bottom-1{
+  height:55px;
+  background:#234CA5;
+  border-radius: 0 0 15px 15px;
+  margin-top: 50px;
+}
+.color-bottom-2{
+  height: 55px;
+  background:#940602;
+  border-radius: 0 0 15px 15px;
+  margin-top: 50px;
+}
+.container-titre-1 h1{
+  font-family:arial;
+  color:#556;
+  margin-top: 100px;
+}
+.container-titre-1,.container-titre-2,.container-titre-3,.flex-block-1,.flex-block-2,.flex-block-3,.container-application{
+  display:flex;
+  justify-content:center;
+  text-align: center;
+}
+.container-titre-2{
+  margin-top: 150px;
+  color:#556;
+  font-family:arial;
+}
+.container-img{
+  height:100vh;
+  margin-top: 20px;
+}
+.container-img img{
+  width: 100%;
+  height: 90vh;
+
+}
+.flex-block-1 p{
+  margin-top: 365px;
+  font-size:22px;
+}
+.block-1{
+  width:350px;
+  height:350px;
+  background:url(https://www.dominos.fr/media/1904/images_carte1.jpg);
+  margin:20px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.block-2{
+  width:350px;
+  height:350px;
+  background:url(https://www.dominos.fr/media/2372/350x350_pop-up_sans-contact.jpg);
+  margin: 20px;
+  background-repeat:no-repeat;
+  background-position:center
+}
+.block-3{
+  width:350px;
+  height:350px;
+  background:url(https://www.dominos.fr/media/2441/350x350_popup_lfl.png);
+  margin: 20px;
+  background-repeat:no-repeat;
+  background-position:center
+}
+.flex-block-2 h1{
+  margin-top: 175px;
+  font-size:23px;
+  font-family:arial;
+  color:#002;
+}
+.flex-block-2 p{
+  margin:25px;
+  font-size:18px;
+  line-height:30px;
+  color:#002;    
+}
+.block-4{
+  width:350px;
+  height:180px;
+  margin:10px;
+  background:url(https://www.dominos.fr/media/2415/sans-titre.png);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.block-5{
+  width:350px;
+  height:180px;
+  margin: 10px;
+  background:url(https://www.dominos.fr/media/2433/299x121_banniere_recettes-estivales.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.block-6{
+  width:350px;
+  height:180px;
+  margin: 10px;
+  background:url(https://www.dominos.fr/media/2431/299x121_banniere_pizza_bbq.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.container-titre-3{
+  margin-top: 120px;
+  font-family:arial;
+  font-size:17px;
+  color:#556;
+}
+.flex-block-3{
+  margin-top: 80px;
+}
+.flex-block-3 h1{
+  margin-top: -30px;
+  font-size:23px;
+  color:#003;
+}
+.flex-block-3 p{
+  margin-top: 170px;
+  font-size:18px;
+  line-height:30px;
+  color:#002;
+  text-align: justify
+}
+.block-7{
+  width:300px;
+  height:180px;
+  margin:20px;
+  background:url(https://www.dominos.fr/media/1851/299x121_equipe_mobile.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.block-8{
+  width:300px;
+  height:180px;
+  margin: 20px;
+  background:url(https://www.dominos.fr/media/1857/299x121_pate_mobile.jpg);
+  background-repeat:no-repeat;
+  background-position:center
+}
+.block-9{
+  width:300px;
+  height:180px;
+  margin: 20px;
+  background:url(https://www.dominos.fr/media/1849/299x121_alexa_mobile.jpg);
+  background-repeat:no-repeat;
+  background-position:center
+}
+.phone-img{
+  width:550px;
+  height:500px;
+  background:url(https://www.dominos.fr/media/1907/appdominos-min.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.text-img{
+  width: 550px;
+  height: 500px;
+  margin-top: -20px;
+}
+.text-img h1{
+  font-family:arial;
+  font-size:40px;
+  color:#000;
+}
+.text-img h2{
+  font-family:arial;
+  font-size:25px;
+  color:#333;
+}
+.text-img p{
+  font-family:arial;
+  color:#333;
+}
+.text-img h1, h2,p{
+  margin-top: 80px;
+}
+.application-img{
+  display:flex;
+  justify-content:center;
+}
+.application-img img{
+  width:35%;
+  margin:15px;
+  margin-top: -3px;
+}
+.container-application{
+  margin-top: 260px;
+}
+
+.container-bottom{
+  display:flex;
+  justify-content:space-around;
+  background:#E6E6E6;
+  height:460px;
+  margin-top:250px;
+  border-top:solid 8px #DDDDDD;
+  border-bottom:solid 8px #DDDDDD;
+  align-items:center;
+}
+.container-bottom a{
+  text-decoration: none;
+  color:#484848;
+}
+.container-bottom a:hover{
+  color:red;
+}
+ul{
+  list-style: none;
+  font-size:18px;
+  font-family:arial;
+  line-height:28px;
+  margin-top: -80px;
+}
+.application-flex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: -140px;
+}
+.application-flex p{
+  margin-top: 130px;
+}
+.application-bottom-1 img{
+  width:170px;
+  margin: 10px;
+}
+.application-bottom-2 img{
+  width:190px;
+  margin: 10px;
+}
+.slogan{
+  text-align: center;
+  margin-top: 20px;
+  font-family:arial;
+}
+footer div p{
+  color:#fff;
+  background:#000;
+  height:60px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 5px;
+  font-size:16px;
+  text-align: center;
+  font-family:arial;
+  margin: 0;
+}
+
+
+/*********responsive menu****************/
+@media (min-width: 61em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/*******responsive site*******/
+@media screen and (max-width: 768px){
+   .titre-1{
+    font-size:17px;
+   }
+   .commandez{
+    flex-direction: column;
+    align-items: center;
+    margin-top: -55px;
+   }
+   .emporter{
+    margin:1px;
+   }
+   .flex-block-1,.flex-block-2,.flex-block-3,.container-application{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .block-2{
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+   }
+   .block-3{
+    margin-top: 90px;
+   }
+   .block-5,.block-6,.block-8{
+    margin-top: 130px;
+   }
+   .block-9{
+    margin-top: 160px;
+   }
+   .phone-img,.text-img{
+    width:100%
+   }
+   .header{
+    width:aut;
+   }
+   .application-bottom-1 img,.application-bottom-2 img{
+    width:120px;
+   }
+   .container-bottom{
+    display: none;
+   }
+   .application-flex{
+    margin-top: 200px;
+   }
+   .text-img h1, h2,p{
+    margin-top: 70px;
+   }
+   .text-img h1{
+    font-size: 25px;
+   }
+}
+
+
+
+
+
+
+
